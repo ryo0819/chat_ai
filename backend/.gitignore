@@ -1,0 +1,33 @@
+# ==========================================
+# Backend (Python/FastAPI) .gitignore
+# ==========================================
+
+# --- Python Bytecode and Cache ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Virtual Environments ---
+# Python virtual environments (e.g. created by uv or venv)
+.venv/
+venv/
+env/
+ENV/
+
+# --- Databases (SQLite, etc.) ---
+# Local database and journal/WAL files should NEVER be committed.
+*.db
+*.sqlite
+*.sqlite3
+*-journal
+*-wal
+*-shm
+
+# --- Local Environment Variables ---
+.env
+.env.*
+!.env.example
