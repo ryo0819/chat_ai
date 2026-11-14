@@ -41,7 +41,7 @@ export default function Home() {
   // アクティブなセッションが変更されたらメッセージをロード
   useEffect(() => {
     if (activeSessionId === null) {
-      setMessages([]);
+      // メッセージのクリアは、セッションを null にする処理（削除時）で行う
       return;
     }
 
